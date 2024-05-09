@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">IT-Training Company</a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="courses.html">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h1 class="text-center">Year up class Phoenix</h1>
+        <div class="input-group mb-3">
+            <input type="text" id="nameFilter" class="form-control" placeholder="Filter by Name, Nickname, or Group">
+            <button class="btn btn-outline-secondary" type="button" id="searchButton">Search</button>
+        </div>
+        <section class="row" id="user-cards">
+            <!-- User cards will be dynamically added here -->
+        </section>
+    </div>
+
+    <script src="js/users.js"></script>
+
+    <body src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+        </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function ()
+            {
+                const userCardsContainer = document.getElementById("user-cards");
+                const nameFilterInput = document.getElementById("nameFilter");
+                const searchButton = document.getElementById("searchButton");  // Get the search button
+
+                function createUserCards(users)
+                {
+                    userCardsContainer.innerHTML = ""; // Clear existing cards
+                    users.forEach(user =>
+                    {
+                        const card = document.createElement("div");
+                        card.className = "col-md-4 mb-4";
+                        card.innerHTML = `
+                <div class="card">
+                    <img src="${user.imageurl}" class="card-img-top" alt="Profile image of ${user.name}">
+                    <div class="card-body">
+                        <h5 class="card-title">${user.name} (${user.nickname})</h5>
+                        <p class="card-text">${user.group}</p>
+                        <p class="card-text"><strong>XP Points:</strong> ${user.xp}</p>
+        <p class="card-text"><strong>Currently Working On:</strong> ${user.currentlyWorkingOn}</p>
+                        <a href="${user.github}" target="_blank" class="btn btn-primary">GitHub</a>
+                    <a href="${user.linkedin}" target="_blank" class="btn btn-secondary">LinkedIn</a>
+                    </div>
+                </div>
+            `;
+                        userCardsContainer.appendChild(card);
+                    });
+                }
+                function updateXP(students)
+                {
+                    students.forEach(student =>
+                    {
+                        // Assuming 'currentlyWorkingOn' contains just the page number
+                        let pageNumber = parseInt(student.currentlyWorkingOn.replace('Page nr', '').trim());
+                        // Each page contributes 10 XP points
+                        student.xp = pageNumber * 10;
+                    });
+                }
+                // Call the function to update XP based on the current page number
+                updateXP(students);
+                // Function to filter users based on input
+                function filterUsers()
+                {
+                    const filterValue = nameFilterInput.value.toLowerCase();
+                    const filteredData = students.filter(student =>
+                        student.name.toLowerCase().includes(filterValue) ||
+                        student.nickname.toLowerCase().includes(filterValue) ||
+                        student.group.toLowerCase().includes(filterValue)
+                    );
+                    createUserCards(filteredData);
+                }
+
+                // Initially load all users
+                createUserCards(students);
+
+                // Add event listener to the search button
+                searchButton.addEventListener("click", function ()
+                {
+                    filterUsers();  // Call filterUsers function on click
+                });
+
+                // Optionally, you can also trigger filtering with the Enter key
+                nameFilterInput.addEventListener("keyup", function (event)
+                {
+                    if (event.key === "Enter")
+                    {
+                        filterUsers();
+                    }
+                });
+            });
+        </script>
+    </body>
+
+</html>
