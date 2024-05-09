@@ -38,9 +38,16 @@
             <input type="text" id="nameFilter" class="form-control" placeholder="Filter by Name, Nickname, or Group">
             <button class="btn btn-outline-secondary" type="button" id="searchButton">Search</button>
         </div>
-        <button type="button" class="btn btn-primary" onclick="generateIcebreaker()">Click me to generate an icebreaker
-            question</button>
-        <p id="displayQuestion"></p>
+        <!-- Center the button by adding 'd-flex justify-content-center' classes -->
+        <div class="d-flex justify-content-center">
+            <button type="button" class="btn btn-primary" onclick="generateIcebreaker()">Click me to generate an
+                icebreaker question</button>
+
+        </div>
+        <br>
+        <div class="d-flex justify-content-center">
+            <p id="displayQuestion"></p>
+        </div>
         <section class="row" id="user-cards">
             <!-- User cards will be dynamically added here -->
         </section>
