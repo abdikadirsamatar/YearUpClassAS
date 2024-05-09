@@ -1,0 +1,192 @@
+[
+    {
+        "name": "Andres Meraz",
+        "group": "Flexbox Forrest",
+        "github": "https://github.com/AndresMeraz",
+        "linkedin": "https://www.linkedin.com/in/andresmeraz/",
+        "email": "andres@example.com",
+        "nickname": "The Game",
+        "imageurl": "img/Avatar_Student_Male.jpg",
+        "gender": "male"
+    },
+    {
+        "name": "Derek Li",
+        "group": "Flexbox Forrest",
+        "github": "https://github.com/deli123",
+        "email": "derek@example.com",
+        "nickname": "JavaScript Jedi",
+        "imageurl": "img/Avatar_Student_Male.jpg",
+        "gender": "male"
+    },
+    {
+        "name": "Edson Peraza",
+        "group": "404 not found",
+        "github": "https://github.com/perazae",
+        "email": "edson@example.com",
+        "nickname": "Puppeteer",
+        "imageurl": "img/Avatar_Student_Male.jpg",
+        "gender": "male"
+    },
+    {
+        "name": "Esther Ajayi",
+        "group": "The Hackers",
+        "github": "https://github.com/EWAjayi",
+        "email": "esther@example.com",
+        "nickname": "Escape Code",
+        "imageurl": "img/Avatar_Student_Female.jpg",
+        "gender": "female"
+    },
+    {
+        "name": "Isaac Cortes Hernandez",
+        "group": "Flexbox Forrest",
+        "github": "https://github.com/icortes",
+        "email": "isaac@example.com",
+        "nickname": "Cookies",
+        "imageurl": "img/Avatar_Student_Male.jpg",
+        "gender": "male"
+    },
+    {
+        "name": "Juan Espinoza",
+        "group": "404 not found",
+        "github": "https://github.com/JuanJEspinoza",
+        "email": "juan@example.com",
+        "nickname": "Code Shark",
+        "imageurl": "img/Avatar_Student_Male.jpg",
+        "gender": "male"
+    },
+    {
+        "name": "Juan Luis Moreno Rico",
+        "group": "The Hackers",
+        "github": "https://github.com/JuanLuisMorenoRico",
+        "email": "juanluis@example.com",
+        "nickname": "Tech Titan",
+        "imageurl": "img/Avatar_Student_Male.jpg",
+        "gender": "male"
+    },
+    {
+        "name": "Justine Elbuhel",
+        "group": "The Hackers",
+        "github": "https://github.com/JustineElbuhel",
+        "email": "justine@example.com",
+        "nickname": "I kill bugs",
+        "imageurl": "https://avatars.githubusercontent.com/u/146771840?v=4",
+        "gender": "unspecified"
+    },
+    {
+        "name": "Kayla McHenry",
+        "group": "Flexbox Forrest",
+        "github": "https://github.com/KaylaMchenry",
+        "email": "kayla@example.com",
+        "nickname": "Flebox Fairy",
+        "imageurl": "img/Avatar_Student_Female.jpg",
+        "gender": "female"
+    },
+    {
+        "name": "Michael Nguyen",
+        "group": "Flexbox Forrest",
+        "github": "https://github.com/MichaelNguyenTT",
+        "email": "michael@example.com",
+        "nickname": "Script Sorc",
+        "imageurl": "img/Avatar_Student_Male.jpg",
+        "gender": "male"
+    },
+    {
+        "name": "Mia McClure",
+        "group": "The Hackers",
+        "github": "https://github.com/MiaMcClure",
+        "email": "mia@example.com",
+        "nickname": "Flex Mo",
+        "imageurl": "img/Avatar_Student_Female.jpg",
+        "gender": "female"
+    },
+    {
+        "name": "Nicolas Foong",
+        "group": "Too Much Code",
+        "github": "https://github.com/NicolasFoong",
+        "email": "nicolas@example.com",
+        "nickname": "Tragic Bites",
+        "imageurl": "img/Avatar_Student_Male.jpg",
+        "gender": "male"
+    },
+    {
+        "name": "Pavlo Sernetskyi",
+        "group": "404 not found",
+        "github": "https://github.com/PavloSernetskyi",
+        "email": "pavlo@example.com",
+        "nickname": "Specificity King",
+        "imageurl": "img/Avatar_Student_Male.jpg",
+        "gender": "male"
+    },
+    {
+        "name": "Ravyn Rouse",
+        "group": "404 not found",
+        "github": "https://github.com/RavynRouse",
+        "email": "ravyn@example.com",
+        "nickname": "Stellar",
+        "imageurl": "img/Avatar_Student_Female.jpg",
+        "gender": "female"
+    },
+    {
+        "name": "Rubia Agripino",
+        "group": "Too Much Code",
+        "github": "https://github.com/ragripino",
+        "email": "rubia@example.com",
+        "nickname": "Code Queen",
+        "imageurl": "https://avatars.githubusercontent.com/u/146772069?v=4",
+        "gender": "unspecified"
+    },
+    {
+        "name": "Victor Padilla",
+        "group": "Too Much Code",
+        "github": "https://github.com/VictorPadilla0861",
+        "email": "victor@example.com",
+        "nickname": "Viral Vato",
+        "imageurl": "img/Avatar_Student_Male.jpg",
+        "gender": "male"
+    },
+    {
+        "name": "Jose Pascua",
+        "group": "Too Much Code",
+        "github": "https://github.com/JoseGPascua",
+        "email": "jose@example.com",
+        "nickname": "Database Brother",
+        "imageurl": "img/Avatar_Student_Male.jpg",
+        "gender": "male"
+    },
+    {
+        "name": "Anna Johnson",
+        "group": "Flexbox Forrest",
+        "github": "https://github.com/AnnaJohnson",
+        "email": "anna@example.com",
+        "nickname": "Code Queen",
+        "imageurl": "img/Avatar_Student_Female.jpg",
+        "gender": "female"
+    },
+    {
+        "name": "Emma Smith",
+        "group": "The Hackers",
+        "github": "https://github.com/EmmaSmith",
+        "email": "emma@example.com",
+        "nickname": "Tech Titan",
+        "imageurl": "img/Avatar_Student_Female.jpg",
+        "gender": "female"
+    },
+    {
+        "name": "James Johnson",
+        "group": "Flexbox Forrest",
+        "github": "https://github.com/JamesJohnson",
+        "email": "james@example.com",
+        "nickname": "Script Sorc",
+        "imageurl": "https://avatars.githubusercontent.com/u/298390?v=4",
+        "gender": "unspecified"
+    },
+    {
+        "name": "Liam Smith",
+        "group": "The Hackers",
+        "github": "https://github.com/LiamSmith",
+        "email": "liam@example.com",
+        "nickname": "Database Brother",
+        "imageurl": "img/Avatar_Student_Male.jpg",
+        "gender": "male"
+    }
+]
