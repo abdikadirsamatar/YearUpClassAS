@@ -35,7 +35,7 @@ let students = [
     imageurl: "https://fakeimg.pl/600x400/7b37c4/fff700?text=Lupe+Argumedo&font=bebas",
     gender: "female",
     xp: 0,
-    currentlyWorkingOn: 38,
+    currentlyWorkingOn: 37,
   },
   {
     name: "Jaranesca Braker",
