@@ -1,14 +1,11 @@
-document.addEventListener("DOMContentLoaded", function ()
-{
+document.addEventListener("DOMContentLoaded", function () {
     const userCardsContainer = document.getElementById("user-cards");
     const nameFilterInput = document.getElementById("nameFilter");
     const searchButton = document.getElementById("searchButton");
 
-    function createUserCards(users)
-    {
+    function createUserCards(users) {
         userCardsContainer.innerHTML = ""; // Clear existing cards
-        users.forEach(user =>
-        {
+        users.forEach(user => {
             const card = document.createElement("div");
             card.className = "col-md-4 mb-4";
             card.innerHTML = `
@@ -28,26 +25,18 @@ document.addEventListener("DOMContentLoaded", function ()
         });
     }
 
-    function updateXP(students)
-    {
-        students.forEach(student =>
-        {
-            // Check and parse 'currentlyWorkingOn' assuming it contains just the page number
+    function updateXP(students) {
+        students.forEach(student => {
             let pageNumber = parseInt(student.currentlyWorkingOn);
-            if (!isNaN(pageNumber))
-            {  // Check if the pageNumber is a valid number
+            if (!isNaN(pageNumber)) {
                 student.xp = pageNumber * 10;
-            } else
-            {
-                student.xp = 0;  // Default to 0 if not a valid number
+            } else {
+                student.xp = 0; // Default to 0 if not a valid number
             }
         });
     }
-    // Call the function to update XP based on the current page number
-    updateXP(students);
-    // Function to filter users based on input
-    function filterUsers()
-    {
+    
+    function filterUsers() {
         const filterValue = nameFilterInput.value.toLowerCase();
         const filteredData = students.filter(student =>
             student.name.toLowerCase().includes(filterValue) ||
@@ -57,21 +46,48 @@ document.addEventListener("DOMContentLoaded", function ()
         createUserCards(filteredData);
     }
 
+    function pickRandomStudent() {
+        if (students.length > 0) {
+            const randomIndex = Math.floor(Math.random() * students.length);
+            const randomStudent = students[randomIndex];
+    
+            // Clear existing cards and display only the randomly selected student
+            userCardsContainer.innerHTML = ""; // Clear the container first
+            const card = document.createElement("div");
+            card.className = "col-md-4 mb-4";
+            card.innerHTML = `
+    <div class="card">
+        <img src="${randomStudent.imageurl}" class="card-img-top" alt="Profile image of ${randomStudent.name}">
+        <div class="card-body">
+            <h5 class="card-title">${randomStudent.name}</h5>
+            <p class="card-text">${randomStudent.group}</p>
+            <p class="card-text"><strong>XP Points:</strong> ${randomStudent.xp}</p>
+            <p class="card-text"><strong>Currently Working On:</strong> ${randomStudent.currentlyWorkingOn}</p>
+            <a href="${randomStudent.github}" target="_blank" class="btn btn-primary">GitHub</a>
+            <a href="${randomStudent.linkedin}" target="_blank" class="btn btn-secondary">LinkedIn</a>
+        </div>
+    </div>
+    `;
+            userCardsContainer.appendChild(card); // Append only the random student's card
+        }
+    }
+    
+
     // Initially load all users
     createUserCards(students);
 
     // Add event listener to the search button
-    searchButton.addEventListener("click", function ()
-    {
+    searchButton.addEventListener("click", function () {
         filterUsers();  // Call filterUsers function on click
     });
 
     // Optionally, you can also trigger filtering with the Enter key
-    nameFilterInput.addEventListener("keyup", function (event)
-    {
-        if (event.key === "Enter")
-        {
+    nameFilterInput.addEventListener("keyup", function (event) {
+        if (event.key === "Enter") {
             filterUsers();
         }
     });
+
+    // Adding a global reference to pickRandomStudent so it can be called from HTML
+    window.pickRandomStudent = pickRandomStudent;
 });
