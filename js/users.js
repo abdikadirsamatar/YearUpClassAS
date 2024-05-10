@@ -6,7 +6,7 @@ let students = [
     linkedin: "https://www.linkedin.com/in/abdikadir-samatar/",
     email: "asamatar@appdev.yearup.org",
     nickname: "deer",
-    imageurl: "https://fakeimg.pl/600x400?text=deer",
+    imageurl: "https://media.licdn.com/dms/image/D4E03AQHCIfkZE-wCMA/profile-displayphoto-shrink_200_200/0/1710697206134?e=1720656000&v=beta&t=UlWXGrpsVIy4L_BTQgve95zK0MHqXjX2mvQDN721Nfo",
     gender: "male",
     devices: "MAC",
     xp: 0,
