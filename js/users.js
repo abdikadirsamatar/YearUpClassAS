@@ -70,7 +70,7 @@ let students = [
     linkedin: "https://www.linkedin.com/in/jesus-mimils-435b32274/",
     email: "jmimila@appdev.yearup.org",
     nickname: "JJ",
-    imageurl: "https://fakeimg.pl/600x400?text=JJ",
+    imageurl: "https://media.licdn.com/dms/image/D4E03AQFN9jSMTdbzDA/profile-displayphoto-shrink_400_400/0/1715103915979?e=1720656000&v=beta&t=5QnIvkUZJ9RX9KlBJbEPdKgv95eNmlrGAiDgvYd9k8A",
     devices: "MAC",
     gender: "male",
     xp: 0,
