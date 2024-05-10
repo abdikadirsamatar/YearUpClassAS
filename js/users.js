@@ -193,7 +193,7 @@ let students = [
     imageurl: "https://fakeimg.pl/600x400/987dff/fff?text=america+ya!+HALLO",
     gender: "male",
     xp: 0,
-    currentlyWorkingOn: "Page nr",
+    currentlyWorkingOn: "Page 39",
   },
   {
     name: "Remsey Mailjard",
