@@ -60,7 +60,7 @@ let students = [
     imageurl: "https://fakeimg.pl/600x400?text=JSJ%20(JavaScript%20Jaranesca)",
     gender: "female",
     xp: 0,
-    currentlyWorkingOn: "Page nr",
+    currentlyWorkingOn: "32",
   },
   {
     name: "Jesús Mimila",
