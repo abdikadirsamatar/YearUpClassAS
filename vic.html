@@ -1,0 +1,312 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body onload="setup()">
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">IT-Training Company</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body onload="setup()">
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">IT-Training Company</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="icebreaker.html">Icebreaker</a>
+                    </li>   
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="vic.html">vic o- O</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="navbar-text">
+                    <p class="mb-0">Phoenix, AZ: <span id="phoenixTime"></span></p>
+                    <p class="mb-0">Netherlands: <span id="netherlandsTime"></span></p>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h1 class="text-center">Year up class Phoenix</h1>
+        <div class="input-group mb-3">
+            <input type="text" id="nameFilter" class="form-control" placeholder="Filter by Name, Nickname, or Group">
+            <button class="btn btn-outline-secondary" type="button" id="searchButton">Search</button>
+        </div>
+        <!-- Center the button by adding 'd-flex justify-content-center' classes -->
+        <div class="d-flex justify-content-center">
+            <button type="button" class="btn btn-primary me-2" onclick="generateIcebreaker()">Click me to generate an icebreaker question</button>
+            <button type="button" class="btn btn-primary" onclick="pickRandomStudent()">Pick Random Name</button>
+        </div>
+        <br>
+        <div class="d-flex justify-content-center">
+            <p id="displayQuestion"></p>
+        </div>
+        <br>
+ 
+        <section class="row" id="user-cards">
+            <!-- User cards will be dynamically added here -->
+        </section>
+    </div>
+
+    <script src="js/demo.js"></script>
+    <script src="js/users.js"></script>
+    <script src="js/currenttime.js"></script>
+
+    <body src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+        </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function ()
+            {
+                const userCardsContainer = document.getElementById("user-cards");
+                const nameFilterInput = document.getElementById("nameFilter");
+                const searchButton = document.getElementById("searchButton");
+
+                function createUserCards(users)
+                {
+                    userCardsContainer.innerHTML = ""; // Clear existing cards
+                    users.forEach(user =>
+                    {
+                        const card = document.createElement("div");
+                        card.className = "col-md-4 mb-4";
+                        card.innerHTML = `
+            <div class="card">
+                <img src="${user.imageurl}" class="card-img-top" alt="Profile image of ${user.name}">
+                <div class="card-body">
+                    <h5 class="card-title">${user.name}</h5>
+                    <p class="card-text">${user.group}</p>
+                    <p class="card-text"><strong>XP Points:</strong> ${user.xp}</p>
+                    <p class="card-text"><strong>Currently Working On:</strong> ${user.currentlyWorkingOn}</p>
+                    <a href="${user.github}" target="_blank" class="btn btn-primary">GitHub</a>
+                    <a href="${user.linkedin}" target="_blank" class="btn btn-secondary">LinkedIn</a>
+                </div>
+            </div>
+            `;
+                        userCardsContainer.appendChild(card);
+                    });
+                }
+
+                function updateXP(students)
+                {
+                    students.forEach(student =>
+                    {
+                        // Check and parse 'currentlyWorkingOn' assuming it contains just the page number
+                        let pageNumber = parseInt(student.currentlyWorkingOn);
+                        if (!isNaN(pageNumber))
+                        {  // Check if the pageNumber is a valid number
+                            student.xp = pageNumber * 10;
+                        } else
+                        {
+                            student.xp = 0;  // Default to 0 if not a valid number
+                        }
+                    });
+                }
+                // Call the function to update XP based on the current page number
+                updateXP(students);
+                // Function to filter users based on input
+                function filterUsers()
+                {
+                    const filterValue = nameFilterInput.value.toLowerCase();
+                    const filteredData = students.filter(student =>
+                        student.name.toLowerCase().includes(filterValue) ||
+                        student.nickname.toLowerCase().includes(filterValue) ||
+                        student.group.toLowerCase().includes(filterValue)
+                    );
+                    createUserCards(filteredData);
+                }
+
+                // Initially load all users
+                createUserCards(students);
+
+                // Add event listener to the search button
+                searchButton.addEventListener("click", function ()
+                {
+                    filterUsers();  // Call filterUsers function on click
+                });
+
+                // Optionally, you can also trigger filtering with the Enter key
+                nameFilterInput.addEventListener("keyup", function (event)
+                {
+                    if (event.key === "Enter")
+                    {
+                        filterUsers();
+                    }
+                });
+            });
+        </script>
+    </body>
+
+</html>Icebreaker</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="navbar-text">
+                    <p class="mb-0">Phoenix, AZ: <span id="phoenixTime"></span></p>
+                    <p class="mb-0">Netherlands: <span id="netherlandsTime"></span></p>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h1 class="text-center">Year up class Phoenix</h1>
+        <div class="input-group mb-3">
+            <input type="text" id="nameFilter" class="form-control" placeholder="Filter by Name, Nickname, or Group">
+            <button class="btn btn-outline-secondary" type="button" id="searchButton">Search</button>
+        </div>
+        <!-- Center the button by adding 'd-flex justify-content-center' classes -->
+        <div class="d-flex justify-content-center">
+            <button type="button" class="btn btn-primary me-2" onclick="generateIcebreaker()">Click me to generate an icebreaker question</button>
+            <button type="button" class="btn btn-primary" onclick="pickRandomStudent()">Pick Random Name</button>
+        </div>
+        <br>
+        <div class="d-flex justify-content-center">
+            <p id="displayQuestion"></p>
+        </div>
+        <br>
+ 
+        <section class="row" id="user-cards">
+            <!-- User cards will be dynamically added here -->
+        </section>
+    </div>
+
+    <script src="js/demo.js"></script>
+    <script src="js/users.js"></script>
+    <script src="js/currenttime.js"></script>
+
+    <body src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+        </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function ()
+            {
+                const userCardsContainer = document.getElementById("user-cards");
+                const nameFilterInput = document.getElementById("nameFilter");
+                const searchButton = document.getElementById("searchButton");
+
+                function createUserCards(users)
+                {
+                    userCardsContainer.innerHTML = ""; // Clear existing cards
+                    users.forEach(user =>
+                    {
+                        const card = document.createElement("div");
+                        card.className = "col-md-4 mb-4";
+                        card.innerHTML = `
+            <div class="card">
+                <img src="${user.imageurl}" class="card-img-top" alt="Profile image of ${user.name}">
+                <div class="card-body">
+                    <h5 class="card-title">${user.name}</h5>
+                    <p class="card-text">${user.group}</p>
+                    <p class="card-text"><strong>XP Points:</strong> ${user.xp}</p>
+                    <p class="card-text"><strong>Currently Working On:</strong> ${user.currentlyWorkingOn}</p>
+                    <a href="${user.github}" target="_blank" class="btn btn-primary">GitHub</a>
+                    <a href="${user.linkedin}" target="_blank" class="btn btn-secondary">LinkedIn</a>
+                </div>
+            </div>
+            `;
+                        userCardsContainer.appendChild(card);
+                    });
+                }
+
+                function updateXP(students)
+                {
+                    students.forEach(student =>
+                    {
+                        // Check and parse 'currentlyWorkingOn' assuming it contains just the page number
+                        let pageNumber = parseInt(student.currentlyWorkingOn);
+                        if (!isNaN(pageNumber))
+                        {  // Check if the pageNumber is a valid number
+                            student.xp = pageNumber * 10;
+                        } else
+                        {
+                            student.xp = 0;  // Default to 0 if not a valid number
+                        }
+                    });
+                }
+                // Call the function to update XP based on the current page number
+                updateXP(students);
+                // Function to filter users based on input
+                function filterUsers()
+                {
+                    const filterValue = nameFilterInput.value.toLowerCase();
+                    const filteredData = students.filter(student =>
+                        student.name.toLowerCase().includes(filterValue) ||
+                        student.nickname.toLowerCase().includes(filterValue) ||
+                        student.group.toLowerCase().includes(filterValue)
+                    );
+                    createUserCards(filteredData);
+                }
+
+                // Initially load all users
+                createUserCards(students);
+
+                // Add event listener to the search button
+                searchButton.addEventListener("click", function ()
+                {
+                    filterUsers();  // Call filterUsers function on click
+                });
+
+                // Optionally, you can also trigger filtering with the Enter key
+                nameFilterInput.addEventListener("keyup", function (event)
+                {
+                    if (event.key === "Enter")
+                    {
+                        filterUsers();
+                    }
+                });
+            });
+        </script>
+    </body>
+
+</html>
