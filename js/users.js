@@ -45,11 +45,10 @@ let students = [
       "https://www.linkedin.com/in/guadalupe-argumedo-saucedo-2b63b8303/",
     email: "gargumedosaucedo@appdev.yearup.org",
     nickname: "CodeLupe",
-    imageurl: "https://fakeimg.pl/600x400?text=CodeLupe",
+    imageurl: "https://fakeimg.pl/600x400/7b37c4/fff700?text=Lupe+Argumedo&font=bebas",
     gender: "female",
-    devices: "MAC",
     xp: 0,
-    currentlyWorkingOn: "Page nr",
+    currentlyWorkingOn: 37,
   },
   {
     name: "Jaranesca Braker",
