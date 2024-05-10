@@ -1,5 +1,18 @@
 let students = [
   {
+    name: "Alfi Ali",
+    group: "App Dev Team",
+    github: "https://github.com/ALFI-ALI",
+    linkedin: "https://www.linkedin.com/in/alfi-ali-015506225/",
+    email: "asamatar@appdev.yearup.org",
+    nickname: "luffy",
+    imageurl: "https://media.licdn.com/dms/image/C4E03AQEoG-gPExm-cw/profile-displayphoto-shrink_800_800/0/1636537401196?e=1720656000&v=beta&t=23QUz82yvLTAwhpN-MQTY0u3bcM-nThbqS-MXJpfTsE",
+    gender: "male",
+    devices: "Windows",
+    xp: 0,
+    currentlyWorkingOn: 31,
+  },
+  {
     name: "Abdikadir Samatar",
     group: "App Dev Team",
     github: "https://github.com/abdikadirsamatar",
