@@ -19,10 +19,10 @@ let students = [
     linkedin: "https://www.linkedin.com/in/dante-angerame-739899192/",
     email: "dangerame@appdev.yearup.org",
     nickname: "The Woodchuck",
-    imageurl: "https://fakeimg.pl/600x400?text=The%20Woodchuck",
+    imageurl: "https://a-z-animals.com/media/2021/10/groundhog-1024x535.jpg",
     gender: "male",
     xp: 0,
-    currentlyWorkingOn: 30,
+    currentlyWorkingOn: 42,
   },
   {
     name: "Guadalupe Argumedo Saucedo",
